@@ -1,0 +1,22 @@
+.header {
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .logo {
+       
+        // border-bottom: 1px solid $color-grey-dark;
+        // overflow: hidden;
+        display: block;
+        margin: 0 auto;            
+        
+
+        &_img {
+            height: 6rem;
+    
+
+        }
+     
+    }
+}

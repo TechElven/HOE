@@ -1,0 +1,33 @@
+.about {
+    background: url(/img/event-5.jpg) no-repeat;
+    background-size: 55%;
+    // background-color: #fdfdfd;
+    overflow: hidden;
+    padding: 8rem 0;
+    width: 90%;
+    margin: 0 auto;
+
+    
+
+  
+
+    &_inner {
+        width: 55%;
+        float: right;
+        background-color: $color-primary;
+        padding: 8rem;
+        box-shadow:1.3rem 1.2rem .8rem rgba(0 , 0, 0, .3);
+        
+        
+
+        h1 {
+            margin-bottom: 3rem;
+            font-size: 3rem;
+            font-weight: 900;
+            text-align: center;
+        }
+
+        
+    }
+}
+

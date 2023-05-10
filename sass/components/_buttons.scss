@@ -1,0 +1,104 @@
+.btn {
+
+    &,
+    &:link,
+    &:visited {
+
+        // border: 2px solid $color-white;
+        padding: 1.5rem 6rem;
+        text-decoration: none;
+        // color: $color-grey-dark;
+        // background-color: $color-white;
+        // text-transform: uppercase;
+        display: inline-block;
+        border-radius: 10rem;
+        font-size: 1.6rem;
+        transition: all.2s;
+        cursor: pointer;
+        position: relative;
+        margin-left: 13rem;
+    
+        }  
+        &:hover {
+            // color: $color-primary;
+            transform: translateY(-3px);
+            box-shadow: 0 1rem 2rem rgba($color-black, .2);
+
+            &::after {
+                transform: scaleX(1.4) scaleY(1.6);
+                opacity: 0;
+            }
+
+            &:active {
+                transform: translateY(-1px);
+                box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+            }
+        }
+
+        &--white {
+            background-color: $color-white;
+            color: $color-grey-dark;
+
+            &::after {
+                background-color: $color-white;
+            }
+        }
+
+        &::after {
+            content: "";
+            display: inline-block;
+            height: 100%;
+            width: 100%;
+            border-radius: 10rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transition: all .4s;
+        }
+
+        &-animation {
+            animation: moveBottom .5s ease-out .7s;
+            animation-fill-mode: backwards;
+        }
+      
+}
+    
+    
+
+
+
+.btn-white {
+
+    button {
+        font-size: 2.2rem;
+        text-align: center;
+        letter-spacing: 2px;
+        border: none;
+        border-radius: 2rem;
+        padding: .8rem;
+        width: 20rem;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        transition: 1s;
+        background-color: $color-grey-dark;
+        color: $color-white;
+    }
+
+}
+
+.btn-green {
+    width: 15rem;
+    height: 4rem;
+    background: $color-primary;
+    border-radius: 1rem;
+    border: none;
+    color: $color-white;
+    font-size: 1.7rem;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}

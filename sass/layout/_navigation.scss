@@ -1,0 +1,115 @@
+.nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 8rem;    
+    // background-color: blue;
+
+    &_bar {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        // background-color: orangered;   
+        position: relative;
+
+
+        &-list {
+            display: inline;   
+            list-style: none;
+            // text-transform: uppercase;
+            padding: 2rem;
+            transition: all .3s;
+
+            &:not(:last-child) {
+            margin-right: 5rem;
+            }
+
+            &--link:link,
+            &--link:visited {
+                position: relative;
+                text-decoration: none;
+                letter-spacing: 0.5px;
+                color: $color-grey-dark;
+                padding: 0 1rem;
+            }
+
+            // a::before {
+            //     content: "";
+            //     width: 0%;
+            //     border-bottom: 2px solid rgb(119, 169, 227);
+            //     height: 4px;
+            // }
+
+            &--link::after{
+                content: "";
+                position: absolute;
+                // border-bottom: 2px solid #77a9e3;
+                height: 4px;
+                background-color: $color-primary;
+                width: 0;
+                left: 0;
+                bottom: -10px;
+                transition: .2s;
+            }
+
+            a:hover::after{
+                width: 100%;
+            }
+
+            &:hover .sub-menu {
+                pointer-events: all;
+                transform: translateY(0);
+                opacity: 1;
+                // transition: 0.3s;
+            }
+        }
+
+    }
+
+    .sub-menu {
+        position: absolute;
+        background-color: $color-white;
+        left: 50rem;
+        line-height: 4rem;
+        list-style: none;
+        border-radius: 0 0 8px 8px;
+        box-shadow: 0 5px 25px rgb(0, 0, 0 /20%);
+        pointer-events: none;
+        transform: translateY(2rem);
+        opacity: 0;
+        z-index: 2000;
+        transition: all ease .3s;
+
+    .sub-item {
+        position: relative;
+        padding: 7px 0;
+        cursor: pointer;
+        // box-shadow: inset 0 -30px 5px -30px rgba(255, 255, 255, 0.2);
+
+        &:not(:last-child) { 
+            border-bottom: 1px solid $color-black;
+        }
+
+
+        a {
+            color: $color-grey-dark;
+            text-decoration: none;
+            padding: 1.5rem 3rem;
+        }
+
+        &:hover {
+            background-color: $color-primary;
+        }
+
+        &:last-child:hover {
+            border-radius: 0 0 8px 8px;
+        }
+
+    }
+
+    }
+
+
+
+
+}
