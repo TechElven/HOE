@@ -1,0 +1,50 @@
+.line {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    .column {
+        width: 40rem;
+        // padding: 3rem;
+        margin: 2rem;
+        position: relative;
+        box-shadow: 7px 1rem 2rem rgba(0, 0, 0, 0.2);
+        transition: ease-in-out .2s;
+
+        h4 {
+            display: none;
+            background-color: $color-secondary;
+            color: $color-white;
+            padding: 1.5rem;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        &:hover h4 {
+            display: block;
+        }
+
+        img {
+            width: 100%;
+            display: block;
+            transition: ease-in-out .2s;
+
+            &:hover {
+                transform: translateY(-1.5rem);
+            }
+        }
+        
+    }
+
+//     &::after {
+//         content: "";
+//         display: table;
+//         clear: both;
+//     }
+// }
+
+}

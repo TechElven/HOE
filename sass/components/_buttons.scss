@@ -92,7 +92,7 @@
 .btn-green {
     width: 15rem;
     height: 4rem;
-    background: $color-primary;
+    background: $color-secondary;
     border-radius: 1rem;
     border: none;
     color: $color-white;
@@ -101,4 +101,33 @@
     font-weight: bold;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    transition: ease-in-out .2s;
+
+    &:hover {
+        background-color: $color-primary;
+    }
+}
+
+.btn-port{
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    margin-top: 2rem;
+    margin-right: 1rem;
+    padding: 1.2rem 1.6rem;
+    border-radius: 5rem;
+    cursor: pointer;
+    font-size: 1.4rem;
+    background-color: $color-secondary;
+    color: $color-white;
+
+    &:hover {
+        background-color: $color-primary;
+    }
+}
+
+.active {
+    background-color: #bcbcbc;
+    color: #fff;
 }

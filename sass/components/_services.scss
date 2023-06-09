@@ -1,6 +1,13 @@
 .heading {
     transform: skewY(2deg);
 
+    h2::before {
+        left: 46%;
+    }
+
+    h2::after {
+        left: 48.8%;
+    }
 }
 
 .row {

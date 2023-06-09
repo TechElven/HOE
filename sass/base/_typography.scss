@@ -56,4 +56,26 @@ body {
     color: $color-primary;
     font-weight: 400;
     text-transform: uppercase;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 12.5rem;
+        height: 1px;
+        background-color: #ddd;
+        bottom: 1px;
+        display: block;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 4rem;
+        height: 3px;
+        background-color: $color-primary;
+        bottom: 0;
+        display: block;
+        left: 30%;
+    }
 }
