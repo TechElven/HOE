@@ -135,3 +135,28 @@
       padding: 6rem;
     }
 }
+
+.footer {
+  display: flex;
+  // flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.6rem;
+
+  &-item {
+    list-style: none;
+  }
+
+  &-link {
+    text-decoration: none;
+    color: inherit;
+    text-transform: uppercase;
+  }
+
+  &_navigation {
+    h3 {
+      text-transform: uppercase;
+      
+    }
+  }
+}
